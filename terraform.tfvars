@@ -1,0 +1,13 @@
+  name                 = "mydb_subnet_group"
+  subnet_ids           = ["subnet-07b4be2526ba269f4", "subnet-0d3977532a4e2142b"]
+  engine               = "postgres"
+  engine_version       = "12.7"
+  instance_class       = "db.t3.micro"
+  db_name              = "mydb"
+  username             = "bharathuser"
+  password             = "bharath333"
+  parameter_group_name = "default.postgres12"
+  publicly_accessible  = true
+  storage_type         = "gp2"
+  storage_encrypted    = true
+  db_subnet_group_name = "mydb_subnet_group"
